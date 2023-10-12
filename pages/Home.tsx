@@ -13,13 +13,21 @@ export default function Home() {
 
   return (
     <View className="flex items-center h-full pb-10 bg-gray-800 pt-14">
-      <Text className="text-xl text-white">Geormat</Text>
-      <TouchableOpacity
-        onPress={startGame}
-        className="items-center w-5/6 px-8 py-4 mt-12 bg-red-500 rounded-full shadow-xl shadow-black"
-      >
-        <Text className="text-xl font-medium text-white">Iniciar jogo</Text>
-      </TouchableOpacity>
+      <View className="flex flex-row items-center flex-1 text-2xl text-white">
+        <Text className="text-2xl text-green-500">Geo</Text>
+        <Text className="text-2xl text-white">rmat</Text>
+      </View>
+      <View className="flex items-center justify-center w-full gap-4">
+        <TouchableOpacity
+          onPress={startGame}
+          className="items-center w-5/6 px-8 py-4 bg-red-500 rounded-full shadow-xl shadow-black justify-self-end"
+        >
+          <Text className="text-xl font-medium text-white">Iniciar jogo</Text>
+        </TouchableOpacity>
+        <TouchableOpacity className="items-center w-5/6 px-8 py-4 bg-red-500 rounded-full shadow-xl shadow-black justify-self-end">
+          <Text className="text-xl font-medium text-white">Configurações</Text>
+        </TouchableOpacity>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
