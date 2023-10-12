@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Brazil",
+        "code": "BR",
+        "url": "https://staging.teuteuf-assets.pages.dev/data/worldle/countries/br/vector.svg"
+    },
+    {
+        "name": "United States",
+        "code": "US",
+        "url": "https://staging.teuteuf-assets.pages.dev/data/worldle/countries/us/vector.svg"
+    },
+    {
+        "name": "Argentina",
+        "code": "AR",
+        "url": "https://staging.teuteuf-assets.pages.dev/data/worldle/countries/ar/vector.svg"
+    },
+    {
+        "name": "China",
+        "code": "CN",
+        "url": "https://staging.teuteuf-assets.pages.dev/data/worldle/countries/cn/vector.svg"
+    }
+]
