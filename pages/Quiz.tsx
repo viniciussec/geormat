@@ -5,6 +5,7 @@ import { Text, TouchableOpacity, View, Image } from "react-native";
 import { SvgUri } from "react-native-svg";
 import { AntDesign } from "@expo/vector-icons";
 import { Country } from "../types/Country";
+import AppModal from "../components/AppModal";
 
 export default function Quiz() {
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
@@ -17,12 +18,14 @@ export default function Quiz() {
 
   const [loading, setLoading] = useState(true);
 
+  const [lost, setLost] = useState(false);
+
   function handleCountrySelection(country: Country) {
     reload();
     if (country.alpha2Code === selectedCountry?.alpha2Code) {
       setPoints(points + 1);
     } else {
-      setPoints(0);
+      setLost(true);
     }
   }
 
@@ -50,6 +53,7 @@ export default function Quiz() {
 
   return (
     <View className="flex items-center justify-between h-full pb-4 bg-gray-800 pt-14">
+      <AppModal points={points} isVisible={lost}></AppModal>
       <View className="flex flex-row items-center justify-between w-5/6 mt-4">
         <TouchableOpacity
           onPress={() => navigation.navigate("Home")}
