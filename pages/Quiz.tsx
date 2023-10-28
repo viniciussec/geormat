@@ -15,6 +15,8 @@ export default function Quiz() {
 
   const [points, setPoints] = useState(0);
 
+  const [loading, setLoading] = useState(true);
+
   function handleCountrySelection(country: Country) {
     reload();
     if (country.alpha2Code === selectedCountry?.alpha2Code) {
@@ -25,6 +27,8 @@ export default function Quiz() {
   }
 
   function reload() {
+    setLoading(true);
+
     const allCountries = require("../assets/countries.json");
 
     const randomCountries = allCountries
@@ -36,6 +40,8 @@ export default function Quiz() {
     setSelectedCountry(
       randomCountries[Math.floor(Math.random() * randomCountries.length)]
     );
+
+    setLoading(false);
   }
 
   useEffect(() => {
@@ -65,15 +71,20 @@ export default function Quiz() {
         </TouchableOpacity>
       </View>
       <View className="items-center justify-center flex-1 w-5/6 p-4 my-6 bg-gray-700 rounded-md shadow-lg shadow-black">
-        {selectedCountry && (
+        {!loading ? (
           <SvgUri
             color={"white"}
-            width={'100%'}
-            height={'100%'}
+            width={"100%"}
+            height={"100%"}
             fill={"white"}
+            onError={() => {
+              reload();
+            }}
             viewBox="0 0 1024 1024"
             uri={`https://staging.teuteuf-assets.pages.dev/data/worldle/countries/${selectedCountry?.alpha2Code.toLowerCase()}/vector.svg`}
           ></SvgUri>
+        ) : (
+          <Text className="text-lg text-white">Carregando...</Text>
         )}
       </View>
       <View className="flex flex-col items-center justify-center w-full gap-4">
@@ -82,7 +93,7 @@ export default function Quiz() {
           className="items-center w-5/6 px-8 py-4 bg-red-500 rounded-full shadow-xl shadow-black"
         >
           <Text className="text-xl font-medium text-white">
-            {countries[0]?.translations.pt}
+            {!loading && countries[0]?.translations.pt}
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -90,7 +101,7 @@ export default function Quiz() {
           className="items-center w-5/6 px-8 py-4 bg-red-500 rounded-full shadow-xl shadow-black"
         >
           <Text className="text-xl font-medium text-white">
-            {countries[1]?.translations.pt}
+            {!loading && countries[1]?.translations.pt}
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -98,7 +109,7 @@ export default function Quiz() {
           className="items-center w-5/6 px-8 py-4 bg-red-500 rounded-full shadow-xl shadow-black"
         >
           <Text className="text-xl font-medium text-white">
-            {countries[2]?.translations.pt}
+            {!loading && countries[2]?.translations.pt}
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -106,7 +117,7 @@ export default function Quiz() {
           className="items-center w-5/6 px-8 py-4 bg-red-500 rounded-full shadow-xl shadow-black"
         >
           <Text className="text-xl font-medium text-white">
-            {countries[3]?.translations.pt}
+            {!loading && countries[3]?.translations.pt}
           </Text>
         </TouchableOpacity>
       </View>
