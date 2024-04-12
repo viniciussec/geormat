@@ -7,15 +7,13 @@ import Modal from "react-native-modal";
 export default function AppModal({
   isVisible,
   points,
+  onConfirm
 }: {
   isVisible: boolean;
   points: number;
+  onConfirm?: () => void;
 }) {
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
-
-  function onConfirm() {
-    navigation.navigate("Quiz");
-  }
 
   function onExit() {
     navigation.navigate("Home");
