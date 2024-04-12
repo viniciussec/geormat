@@ -31,7 +31,7 @@ export default function Quiz() {
 
   function reload() {
     setLoading(true);
-    const allCountries = require("../assets/countries.json");
+    const allCountries = require("../assets/independentCountries.json");
 
     const randomCountries = allCountries
       .sort(() => 0.5 - Math.random())
