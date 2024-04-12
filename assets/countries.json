@@ -2194,55 +2194,6 @@
     "independent": true
   },
   {
-    "name": "United States Minor Outlying Islands",
-    "topLevelDomain": [".us"],
-    "alpha2Code": "UM",
-    "alpha3Code": "UMI",
-    "callingCodes": ["246"],
-    "altSpellings": ["UM"],
-    "subregion": "Northern America",
-    "region": "Americas",
-    "population": 300,
-    "demonym": "American",
-    "timezones": ["UTC-11:00", "UTC-10:00", "UTC+12:00"],
-    "nativeName": "United States Minor Outlying Islands",
-    "numericCode": "581",
-    "flags": {
-      "svg": "https://flagcdn.com/um.svg",
-      "png": "https://flagcdn.com/w320/um.png"
-    },
-    "currencies": [
-      {
-        "code": "GBP",
-        "name": "British pound",
-        "symbol": "£"
-      }
-    ],
-    "languages": [
-      {
-        "iso639_1": "en",
-        "iso639_2": "eng",
-        "name": "English",
-        "nativeName": "English"
-      }
-    ],
-    "translations": {
-      "br": "Inizi Minor A-bell Stadoù-Unanet",
-      "pt": "Ilhas Menores Distantes dos Estados Unidos",
-      "nl": "Kleine afgelegen eilanden van de Verenigde Staten",
-      "hr": "Mali udaljeni otoci SAD-a",
-      "fa": "جزایر کوچک حاشیه‌ای ایالات متحده آمریکا",
-      "de": "Kleinere Inselbesitzungen der Vereinigten Staaten",
-      "es": "Islas Ultramarinas Menores de Estados Unidos",
-      "fr": "Îles mineures éloignées des États-Unis",
-      "ja": "合衆国領有小離島",
-      "it": "Isole minori esterne degli Stati Uniti d'America",
-      "hu": "Amerikai Egyesült Államok lakatlan külbirtokai"
-    },
-    "flag": "https://flagcdn.com/um.svg",
-    "independent": false
-  },
-  {
     "name": "Virgin Islands (British)",
     "topLevelDomain": [".vg"],
     "alpha2Code": "VG",
@@ -7743,74 +7694,6 @@
     "independent": true
   },
   {
-    "name": "Jersey",
-    "topLevelDomain": [".je"],
-    "alpha2Code": "JE",
-    "alpha3Code": "JEY",
-    "callingCodes": ["44"],
-    "capital": "Saint Helier",
-    "altSpellings": [
-      "JE",
-      "Bailiwick of Jersey",
-      "Bailliage de Jersey",
-      "Bailliage dé Jèrri"
-    ],
-    "subregion": "Northern Europe",
-    "region": "Europe",
-    "population": 100800,
-    "latlng": [49.25, -2.16666666],
-    "demonym": "Channel Islander",
-    "area": 116.0,
-    "timezones": ["UTC+01:00"],
-    "nativeName": "Jersey",
-    "numericCode": "832",
-    "flags": {
-      "svg": "https://flagcdn.com/je.svg",
-      "png": "https://flagcdn.com/w320/je.png"
-    },
-    "currencies": [
-      {
-        "code": "GBP",
-        "name": "British pound",
-        "symbol": "£"
-      },
-      {
-        "code": "JEP[G]",
-        "name": "Jersey pound",
-        "symbol": "£"
-      }
-    ],
-    "languages": [
-      {
-        "iso639_1": "en",
-        "iso639_2": "eng",
-        "name": "English",
-        "nativeName": "English"
-      },
-      {
-        "iso639_1": "fr",
-        "iso639_2": "fra",
-        "name": "French",
-        "nativeName": "français"
-      }
-    ],
-    "translations": {
-      "br": "Jerzenez",
-      "pt": "Jersey",
-      "nl": "Jersey",
-      "hr": "Jersey",
-      "fa": "جرزی",
-      "de": "Jersey",
-      "es": "Jersey",
-      "fr": "Jersey",
-      "ja": "ジャージー",
-      "it": "Isola di Jersey",
-      "hu": "Jersey"
-    },
-    "flag": "https://flagcdn.com/je.svg",
-    "independent": false
-  },
-  {
     "name": "Jordan",
     "topLevelDomain": [".jo"],
     "alpha2Code": "JO",
@@ -9393,69 +9276,6 @@
     "independent": true
   },
   {
-    "name": "Marshall Islands",
-    "topLevelDomain": [".mh"],
-    "alpha2Code": "MH",
-    "alpha3Code": "MHL",
-    "callingCodes": ["692"],
-    "capital": "Majuro",
-    "altSpellings": [
-      "MH",
-      "Republic of the Marshall Islands",
-      "Aolepān Aorōkin M̧ajeļ"
-    ],
-    "subregion": "Micronesia",
-    "region": "Oceania",
-    "population": 59194,
-    "latlng": [9.0, 168.0],
-    "demonym": "Marshallese",
-    "area": 181.0,
-    "timezones": ["UTC+12:00"],
-    "nativeName": "M̧ajeļ",
-    "numericCode": "584",
-    "flags": {
-      "svg": "https://flagcdn.com/mh.svg",
-      "png": "https://flagcdn.com/w320/mh.png"
-    },
-    "currencies": [
-      {
-        "code": "USD",
-        "name": "United States dollar",
-        "symbol": "$"
-      }
-    ],
-    "languages": [
-      {
-        "iso639_1": "en",
-        "iso639_2": "eng",
-        "name": "English",
-        "nativeName": "English"
-      },
-      {
-        "iso639_1": "mh",
-        "iso639_2": "mah",
-        "name": "Marshallese",
-        "nativeName": "Kajin M̧ajeļ"
-      }
-    ],
-    "translations": {
-      "br": "Inizi Marshall",
-      "pt": "Ilhas Marshall",
-      "nl": "Marshalleilanden",
-      "hr": "Maršalovi Otoci",
-      "fa": "جزایر مارشال",
-      "de": "Marshallinseln",
-      "es": "Islas Marshall",
-      "fr": "Îles Marshall",
-      "ja": "マーシャル諸島",
-      "it": "Isole Marshall",
-      "hu": "Marshall-szigetek"
-    },
-    "flag": "https://flagcdn.com/mh.svg",
-    "cioc": "MHL",
-    "independent": true
-  },
-  {
     "name": "Martinique",
     "topLevelDomain": [".mq"],
     "alpha2Code": "MQ",
@@ -9791,60 +9611,6 @@
       }
     ],
     "cioc": "MEX",
-    "independent": true
-  },
-  {
-    "name": "Micronesia (Federated States of)",
-    "topLevelDomain": [".fm"],
-    "alpha2Code": "FM",
-    "alpha3Code": "FSM",
-    "callingCodes": ["691"],
-    "capital": "Palikir",
-    "altSpellings": ["FM", "Federated States of Micronesia"],
-    "subregion": "Micronesia",
-    "region": "Oceania",
-    "population": 115021,
-    "latlng": [6.91666666, 158.25],
-    "demonym": "Micronesian",
-    "area": 702.0,
-    "gini": 40.1,
-    "timezones": ["UTC+10:00", "UTC+11:00"],
-    "nativeName": "Micronesia",
-    "numericCode": "583",
-    "flags": {
-      "svg": "https://flagcdn.com/fm.svg",
-      "png": "https://flagcdn.com/w320/fm.png"
-    },
-    "currencies": [
-      {
-        "code": "USD",
-        "name": "United States dollar",
-        "symbol": "$"
-      }
-    ],
-    "languages": [
-      {
-        "iso639_1": "en",
-        "iso639_2": "eng",
-        "name": "English",
-        "nativeName": "English"
-      }
-    ],
-    "translations": {
-      "br": "Mikronezia",
-      "pt": "Micronésia",
-      "nl": "Micronesië",
-      "hr": "Mikronezija",
-      "fa": "ایالات فدرال میکرونزی",
-      "de": "Mikronesien",
-      "es": "Micronesia",
-      "fr": "Micronésie",
-      "ja": "ミクロネシア連邦",
-      "it": "Micronesia",
-      "hu": "Mikronézia"
-    },
-    "flag": "https://flagcdn.com/fm.svg",
-    "cioc": "FSM",
     "independent": true
   },
   {
@@ -11135,68 +10901,6 @@
     "independent": true
   },
   {
-    "name": "Northern Mariana Islands",
-    "topLevelDomain": [".mp"],
-    "alpha2Code": "MP",
-    "alpha3Code": "MNP",
-    "callingCodes": ["1"],
-    "capital": "Saipan",
-    "altSpellings": [
-      "MP",
-      "Commonwealth of the Northern Mariana Islands",
-      "Sankattan Siha Na Islas Mariånas"
-    ],
-    "subregion": "Micronesia",
-    "region": "Oceania",
-    "population": 57557,
-    "latlng": [15.2, 145.75],
-    "demonym": "American",
-    "area": 464.0,
-    "timezones": ["UTC+10:00"],
-    "nativeName": "Northern Mariana Islands",
-    "numericCode": "580",
-    "flags": {
-      "svg": "https://flagcdn.com/mp.svg",
-      "png": "https://flagcdn.com/w320/mp.png"
-    },
-    "currencies": [
-      {
-        "code": "USD",
-        "name": "United States dollar",
-        "symbol": "$"
-      }
-    ],
-    "languages": [
-      {
-        "iso639_1": "en",
-        "iso639_2": "eng",
-        "name": "English",
-        "nativeName": "English"
-      },
-      {
-        "iso639_1": "ch",
-        "iso639_2": "cha",
-        "name": "Chamorro",
-        "nativeName": "Chamoru"
-      }
-    ],
-    "translations": {
-      "br": "Inizi Mariana an Norzh",
-      "pt": "Ilhas Marianas",
-      "nl": "Noordelijke Marianeneilanden",
-      "hr": "Sjevernomarijanski otoci",
-      "fa": "جزایر ماریانای شمالی",
-      "de": "Nördliche Marianen",
-      "es": "Islas Marianas del Norte",
-      "fr": "Îles Mariannes du Nord",
-      "ja": "北マリアナ諸島",
-      "it": "Isole Marianne Settentrionali",
-      "hu": "Északi-Mariana-szigetek"
-    },
-    "flag": "https://flagcdn.com/mp.svg",
-    "independent": false
-  },
-  {
     "name": "Norway",
     "topLevelDomain": [".no"],
     "alpha2Code": "NO",
@@ -11464,81 +11168,6 @@
     },
     "flag": "https://flagcdn.com/pw.svg",
     "cioc": "PLW",
-    "independent": true
-  },
-  {
-    "name": "Palestine, State of",
-    "topLevelDomain": [".ps"],
-    "alpha2Code": "PS",
-    "alpha3Code": "PSE",
-    "callingCodes": ["970"],
-    "capital": "Ramallah",
-    "altSpellings": ["PS", "State of Palestine", "Dawlat Filasṭin"],
-    "subregion": "Western Asia",
-    "region": "Asia",
-    "population": 4803269,
-    "latlng": [31.9, 35.2],
-    "demonym": "Palestinian",
-    "gini": 33.7,
-    "timezones": ["UTC+02:00"],
-    "borders": ["ISR", "EGY", "JOR"],
-    "nativeName": "فلسطين",
-    "numericCode": "275",
-    "flags": {
-      "svg": "https://flagcdn.com/ps.svg",
-      "png": "https://flagcdn.com/w320/ps.png"
-    },
-    "currencies": [
-      {
-        "code": "EGP",
-        "name": "Egyptian pound",
-        "symbol": "E£"
-      },
-      {
-        "code": "ILS",
-        "name": "Israeli new shekel",
-        "symbol": "₪"
-      },
-      {
-        "code": "JOD",
-        "name": "Jordanian dinar",
-        "symbol": "د.أ"
-      }
-    ],
-    "languages": [
-      {
-        "iso639_1": "ar",
-        "iso639_2": "ara",
-        "name": "Arabic",
-        "nativeName": "العربية"
-      }
-    ],
-    "translations": {
-      "br": "Palestina",
-      "pt": "Palestina",
-      "nl": "Palestijnse gebieden",
-      "hr": "Palestina",
-      "fa": "فلسطین",
-      "de": "Palästina",
-      "es": "Palestina",
-      "fr": "Palestine",
-      "ja": "パレスチナ",
-      "it": "Palestina",
-      "hu": "Palesztina"
-    },
-    "flag": "https://flagcdn.com/ps.svg",
-    "regionalBlocs": [
-      {
-        "acronym": "AL",
-        "name": "Arab League",
-        "otherNames": [
-          "جامعة الدول العربية",
-          "Jāmiʻat ad-Duwal al-ʻArabīyah",
-          "League of Arab States"
-        ]
-      }
-    ],
-    "cioc": "PLE",
     "independent": true
   },
   {
@@ -12194,72 +11823,6 @@
       }
     ],
     "cioc": "QAT",
-    "independent": true
-  },
-  {
-    "name": "Republic of Kosovo",
-    "topLevelDomain": [""],
-    "alpha2Code": "XK",
-    "alpha3Code": "UNK",
-    "callingCodes": ["383"],
-    "capital": "Pristina",
-    "altSpellings": ["XK", "Република Косово"],
-    "subregion": "Eastern Europe",
-    "region": "Europe",
-    "population": 1775378,
-    "latlng": [42.666667, 21.166667],
-    "demonym": "Kosovar",
-    "area": 10908.0,
-    "gini": 29.0,
-    "timezones": ["UTC+01:00"],
-    "borders": ["ALB", "MKD", "MNE", "SRB"],
-    "nativeName": "Republika e Kosovës",
-    "numericCode": "926",
-    "flags": {
-      "svg": "https://flagcdn.com/xk.svg",
-      "png": "https://flagcdn.com/w320/xk.png"
-    },
-    "currencies": [
-      {
-        "code": "EUR",
-        "name": "Euro",
-        "symbol": "€"
-      }
-    ],
-    "languages": [
-      {
-        "iso639_1": "sq",
-        "iso639_2": "sqi",
-        "name": "Albanian",
-        "nativeName": "Shqip"
-      },
-      {
-        "iso639_1": "sr",
-        "iso639_2": "srp",
-        "name": "Serbian",
-        "nativeName": "српски језик"
-      }
-    ],
-    "translations": {
-      "br": "Kosovo",
-      "pt": "Kosovo",
-      "nl": "Republiek van Kosovo",
-      "hr": "Kosovo",
-      "fa": "کوزوو",
-      "de": "Republic of Kosovo",
-      "es": "Kosovo",
-      "fr": "Kosovo",
-      "ja": "Republic of Kosovo",
-      "it": "Republic of Kosovo",
-      "hu": "Koszovó"
-    },
-    "flag": "https://flagcdn.com/xk.svg",
-    "regionalBlocs": [
-      {
-        "acronym": "CEFTA",
-        "name": "Central European Free Trade Agreement"
-      }
-    ],
     "independent": true
   },
   {
@@ -15737,65 +15300,6 @@
     },
     "flag": "https://flagcdn.com/tc.svg",
     "independent": false
-  },
-  {
-    "name": "Tuvalu",
-    "topLevelDomain": [".tv"],
-    "alpha2Code": "TV",
-    "alpha3Code": "TUV",
-    "callingCodes": ["688"],
-    "capital": "Funafuti",
-    "altSpellings": ["TV"],
-    "subregion": "Polynesia",
-    "region": "Oceania",
-    "population": 11792,
-    "latlng": [-8.0, 178.0],
-    "demonym": "Tuvaluan",
-    "area": 26.0,
-    "gini": 39.1,
-    "timezones": ["UTC+12:00"],
-    "nativeName": "Tuvalu",
-    "numericCode": "798",
-    "flags": {
-      "svg": "https://flagcdn.com/tv.svg",
-      "png": "https://flagcdn.com/w320/tv.png"
-    },
-    "currencies": [
-      {
-        "code": "AUD",
-        "name": "Australian dollar",
-        "symbol": "$"
-      },
-      {
-        "code": "TVD[G]",
-        "name": "Tuvaluan dollar",
-        "symbol": "$"
-      }
-    ],
-    "languages": [
-      {
-        "iso639_1": "en",
-        "iso639_2": "eng",
-        "name": "English",
-        "nativeName": "English"
-      }
-    ],
-    "translations": {
-      "br": "Tuvalu",
-      "pt": "Tuvalu",
-      "nl": "Tuvalu",
-      "hr": "Tuvalu",
-      "fa": "تووالو",
-      "de": "Tuvalu",
-      "es": "Tuvalu",
-      "fr": "Tuvalu",
-      "ja": "ツバル",
-      "it": "Tuvalu",
-      "hu": "Tuvalu"
-    },
-    "flag": "https://flagcdn.com/tv.svg",
-    "cioc": "TUV",
-    "independent": true
   },
   {
     "name": "Uganda",

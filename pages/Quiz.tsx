@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import React, { useEffect, useState } from "react";
 import { Text, TouchableOpacity, TouchableHighlight, View } from "react-native";
-import { SvgUri } from "react-native-svg";
+import { SvgXml } from "react-native-svg";
 import { AntDesign } from "@expo/vector-icons";
 import { Country } from "../types/Country";
 import AppModal from "../components/AppModal";
@@ -16,9 +16,9 @@ export default function Quiz() {
 
   const [points, setPoints] = useState(0);
 
-  const [loading, setLoading] = useState(true);
-
   const [lost, setLost] = useState(false);
+
+  const [imgXml, setImgXml] = useState(null);
 
   function handleCountrySelection(country: Country) {
     reload();
@@ -30,7 +30,7 @@ export default function Quiz() {
   }
 
   function reload() {
-    setLoading(true);
+    setImgXml(null);
     const allCountries = require("../assets/independentCountries.json");
 
     const randomCountries = allCountries
@@ -42,8 +42,6 @@ export default function Quiz() {
     setSelectedCountry(
       randomCountries[Math.floor(Math.random() * randomCountries.length)]
     );
-
-    setLoading(false);
   }
 
   function loadHighlitColor(country: Country) {
@@ -53,9 +51,21 @@ export default function Quiz() {
     return "red";
   }
 
+  async function getImgXml() {
+    const url = `http://192.168.0.13:3000/${selectedCountry?.alpha2Code.toLowerCase()}.svg`;
+    const xml = await (await fetch(url)).text();
+    setImgXml(xml);
+  }
+
   useEffect(() => {
     reload();
   }, []);
+
+  useEffect(() => {
+    if (selectedCountry) {
+      getImgXml();
+    }
+  }, [selectedCountry]);
 
   return (
     <View className="flex items-center justify-between h-full pb-4 bg-gray-800 pt-14">
@@ -89,18 +99,17 @@ export default function Quiz() {
         </TouchableOpacity>
       </View>
       <View className="items-center justify-center flex-1 w-5/6 p-4 my-6 bg-gray-700 rounded-md shadow-lg shadow-black">
-        {!loading ? (
-          <SvgUri
-            color={"white"}
+        {imgXml !== null ? (
+          <SvgXml
             width={"100%"}
             height={"100%"}
             fill={"white"}
             onError={() => {
               reload();
             }}
+            xml={imgXml.replace(/fill="#[0-9a-f]{6}"/g, `fill="white"`)}
             viewBox="0 0 1024 1024"
-            uri={`https://staging.teuteuf-assets.pages.dev/data/worldle/countries/${selectedCountry?.alpha2Code.toLowerCase()}/vector.svg`}
-          ></SvgUri>
+          ></SvgXml>
         ) : (
           <Text className="text-lg text-white">Carregando...</Text>
         )}
@@ -115,7 +124,7 @@ export default function Quiz() {
               className="items-center w-5/6 px-8 py-4 bg-[#5D5D81] rounded-full shadow-xl shadow-black"
             >
               <Text className="text-xl font-medium text-white">
-                {!loading && country.translations.pt}
+                {country.translations.pt}
               </Text>
             </TouchableHighlight>
           );
