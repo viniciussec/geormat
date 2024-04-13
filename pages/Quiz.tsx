@@ -31,7 +31,7 @@ export default function Quiz() {
 
   function reload() {
     setImgXml(null);
-    const allCountries = require("../assets/independentCountries.json");
+    const allCountries = require("../assets/countries.json");
 
     const randomCountries = allCountries
       .sort(() => 0.5 - Math.random())
@@ -54,6 +54,11 @@ export default function Quiz() {
   async function getImgXml() {
     const url = `http://192.168.0.13:3000/${selectedCountry?.alpha2Code.toLowerCase()}.svg`;
     const xml = await (await fetch(url)).text();
+
+    if (xml.includes("404: Not Found")) {
+      reload();
+      return;
+    }
     setImgXml(xml);
   }
 
@@ -81,7 +86,7 @@ export default function Quiz() {
       <View className="flex flex-row items-center justify-between w-5/6 mt-4">
         <TouchableOpacity
           onPress={() => navigation.goBack()}
-          className="flex items-center justify-center px-2 py-2 bg-red-500 rounded-full shadow-xl w-14 h-14 shadow-black"
+          className="flex items-center justify-center px-2 py-2 bg-[#ff3801] rounded-full shadow-xl w-14 h-14 shadow-black"
         >
           <AntDesign name="arrowleft" size={24} color="white" />
         </TouchableOpacity>
@@ -93,7 +98,7 @@ export default function Quiz() {
         </View>
         <TouchableOpacity
           onPress={reload}
-          className="flex items-center justify-center px-2 py-2 bg-[#5D5D81] rounded-full shadow-xl w-14 h-14 shadow-black"
+          className="flex items-center justify-center px-2 py-2 bg-[#0373ab] rounded-full shadow-xl w-14 h-14 shadow-black"
         >
           <AntDesign name="reload1" size={24} color="white" />
         </TouchableOpacity>
@@ -121,7 +126,7 @@ export default function Quiz() {
               key={country.alpha2Code}
               underlayColor={loadHighlitColor(country)}
               onPress={() => handleCountrySelection(country)}
-              className="items-center w-5/6 px-8 py-4 bg-[#5D5D81] rounded-full shadow-xl shadow-black"
+              className="items-center w-5/6 px-8 py-4 bg-[#0373ab] rounded-full shadow-xl shadow-black"
             >
               <Text className="text-xl font-medium text-white">
                 {country.translations.pt}
