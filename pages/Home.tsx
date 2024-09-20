@@ -33,7 +33,6 @@ export default function Home() {
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-          disabled
           onPress={startLevelsGame}
           className="items-center w-5/6 px-8 py-4 bg-[#0373ab] rounded-full shadow-xl shadow-black justify-self-end"
         >
