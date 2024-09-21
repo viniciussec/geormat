@@ -77,7 +77,7 @@ export default function Quiz() {
   }, [selectedCountry]);
 
   return (
-    <View className="flex items-center justify-between h-full pb-4 bg-gray-800 pt-14">
+    <View className="flex items-center justify-between h-full pb-4 bg-gray-800 pt-10">
       <AppModal
         onConfirm={() => {
           setPoints(0);
@@ -90,7 +90,7 @@ export default function Quiz() {
       <View className="flex flex-row items-center justify-between w-5/6 mt-4">
         <TouchableOpacity
           onPress={() => navigation.goBack()}
-          className="flex items-center justify-center px-2 py-2 bg-[#ff3801] rounded-full shadow-xl w-14 h-14 shadow-black"
+          className="flex items-center justify-center px-2 py-2 bg-[#ff3801] rounded-full w-14 h-14 "
         >
           <AntDesign name="arrowleft" size={24} color="white" />
         </TouchableOpacity>
@@ -102,12 +102,12 @@ export default function Quiz() {
         </View>
         <TouchableOpacity
           onPress={reload}
-          className="flex items-center justify-center px-2 py-2 bg-[#0373ab] rounded-full shadow-xl w-14 h-14 shadow-black"
+          className="flex items-center justify-center px-2 py-2 bg-[#0373ab] rounded-full w-14 h-14 "
         >
           <AntDesign name="reload1" size={24} color="white" />
         </TouchableOpacity>
       </View>
-      <View className="items-center justify-center flex-1 w-5/6 p-4 my-6 bg-gray-700 rounded-md shadow-lg shadow-black">
+      <View className="items-center justify-center flex-1 w-5/6 p-4 my-6 bg-gray-700 rounded-md">
         {imgXml !== null ? (
           <SvgXml
             width={"100%"}
@@ -130,7 +130,7 @@ export default function Quiz() {
               key={country.alpha2Code}
               underlayColor={loadHighlitColor(country)}
               onPress={() => handleCountrySelection(country)}
-              className="items-center w-5/6 px-8 py-4 bg-[#0373ab] rounded-full shadow-xl shadow-black"
+              className="items-center w-5/6 px-8 py-4 bg-[#0373ab] rounded-full"
             >
               <Text className="text-xl font-medium text-white">
                 {country.translations.pt}

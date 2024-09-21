@@ -20,7 +20,7 @@ export default function Home() {
         <View className="items-start w-5/6">
           <TouchableOpacity
             onPress={() => navigation.goBack()}
-            className="flex items-center justify-center px-2 py-2 bg-red-500 rounded-full shadow-xl w-14 h-14 shadow-black"
+            className="flex items-center justify-center px-2 py-2 bg-red-500 rounded-full w-14 h-14"
           >
             <AntDesign name="arrowleft" size={24} color="white" />
           </TouchableOpacity>
@@ -32,7 +32,7 @@ export default function Home() {
             <TouchableOpacity
               key={item}
               onPress={startGame}
-              className="items-center self-center w-5/6 px-8 py-4 bg-[#5D5D81] rounded-full shadow-xl shadow-black justify-self-end"
+              className="items-center self-center w-5/6 px-8 py-4 bg-[#5D5D81] rounded-full justify-self-end"
             >
               <Text className="text-xl font-medium text-white">{item}</Text>
             </TouchableOpacity>
