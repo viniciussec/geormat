@@ -40,7 +40,7 @@ export default function Home() {
           ItemSeparatorComponent={() => <View style={{ height: 30 }} />}
         />
       </View>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
     </View>
   );
 }
