@@ -21,9 +21,9 @@ export default function Quiz() {
   const [imgXml, setImgXml] = useState(null);
 
   function handleCountrySelection(country: Country) {
-    reload();
     if (country.alpha2Code === selectedCountry?.alpha2Code) {
       setPoints(points + 1);
+      reload();
     } else {
       setLost(true);
     }
@@ -52,14 +52,18 @@ export default function Quiz() {
   }
 
   async function getImgXml() {
-    const url = `http://192.168.0.13:3000/${selectedCountry?.alpha2Code.toLowerCase()}.svg`;
-    const xml = await (await fetch(url)).text();
+    try {
+      const url = `http://10.0.3.2:8081/image?country=${selectedCountry?.alpha2Code.toLowerCase()}`;
+      const xml = await (await fetch(url)).text();
 
-    if (xml.includes("404: Not Found")) {
-      reload();
-      return;
+      if (xml.includes("404: Not Found")) {
+        reload();
+        return;
+      }
+      setImgXml(xml);
+    } catch (err) {
+      console.error(err);
     }
-    setImgXml(xml);
   }
 
   useEffect(() => {
