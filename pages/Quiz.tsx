@@ -8,6 +8,7 @@ import { Country } from "../types/Country";
 import AppModal from "../components/AppModal";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
+import { API_URL } from "../utils/constants";
 
 export default function Quiz() {
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
@@ -55,7 +56,7 @@ export default function Quiz() {
 
   async function getImgXml() {
     try {
-      const url = `http://10.0.3.2:8081/image?country=${selectedCountry?.alpha2Code.toLowerCase()}`;
+      const url = `${API_URL}/images/${selectedCountry?.alpha2Code.toLowerCase()}`;
       const xml = await (await fetch(url)).text();
 
       if (xml.includes("404: Not Found")) {
@@ -64,7 +65,7 @@ export default function Quiz() {
       }
       setImgXml(xml);
     } catch (err) {
-      console.error(err);
+      reload();
     }
   }
 
